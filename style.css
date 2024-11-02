@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+
+}
+
+
+
+body{background-position: 33%;
+   background-color : rgba(179, 179, 124, 0.51);
+background-size: cover;}
+
+
+header {
+    background-color: NONE;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0% 10%;
+    font-family: "Oswald", sans-serif;
+    font-size: 25px;
+}
+
+
+
+
+header ul li {
+    display: inline-block;
+    padding: 10px 15px;
+   font-family: "Bahiana", sans-serif;
+font-size: 190%;
+    border-radius: 20px;
+    margin-right: 70px;
+}
+
+header ul li a{ 
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+
+
+main{height: 92vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+.heading {
+    font-size: 36px;
+    color: white; 
+   font-size: 90PX;
+    left: 100px;
+    position: absolute;
+    top: 16%;
+    left: 50%;
+    top: calc(- 25px); 
+    left: calc(60% - 410px);
+    font-family: "Bahiana", sans-serif;
+    transform: translateX(-50%);
+    z-index: 1; 
+}
+
+
+.rectangle {
+    border-radius: 60px;
+    padding: 20px;
+    background-color: rgba(116, 18, 18, 1);
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    width: 300px;
+    height: 700%;
+    color: white;
+    width: 40%;
+    line-height: 1.6;
+    text-align: justify;
+    max-width: 80%;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+    position: relative;
+    margin: 150px auto 0 auto; 
+    z-index: 0; 
+    font-size: 120%;
+    height: 300px;
+}
+
+
+.image-top-left, .image-top-right {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    z-index: 1;
+}
+
+.image-top-left {
+    top: calc(55% - 25px); 
+    left: calc(48% - 410px);
+    height: 10%;
+    width: 8%;
+}
+
+.image-top-right {
+    top: calc(55% - 360px); 
+    left: calc(60% + 130px); 
+    height: 10%;
+    width: 8%;
+}
+
+
+.footer {
+    background-color: rgba(66, 3, 3, 1);
+    color: white;
+    height: auto;
+    text-align: left; 
+    width: 100%;
+    font-family: "Bahiana", sans-serif;
+    padding: 10px 0;
+    
+    position: fixed;
+    bottom: 0;
+}
+
+.footer-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; 
+    margin-left: 16%;
+}
+.footer-icon {
+    width: 50px; 
+    height: 40px;
+    margin-right: 10px;
+}
+
+.footer-item span {
+    font-size: 16px; 
+}
+
+
+body {
+    background-color: rgba(179, 179, 124, 0.51);
+    color: black;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+h1 {
+    color: black; 
+}
+
+.rectangle {
+    background-color:rgba(135, 166, 122, 0.51); 
+}
+ a{color: black;}
+
+
+
+
+.footer {
+    background-color:rgba(151, 151, 86, 0.51); 
+    color: black; 
+}
+
+
+body.dark-mode .footer {
+    background-color: rgba(66, 3, 3, 1);
+    color: #f0f0f0; 
+}
+
+
+body.dark-mode {
+    background-color: rgba(179, 179, 124, 0.51);
+}
+
+body.dark-mode h1 {
+    color: white; 
+}
+
+body.dark-mode .rectangle {
+    background-color: rgba(116, 18, 18, 1) 
+}
+
+
+
+.toggle-button {
+    width: 50px;
+    height: 25px;
+    background-color: lightgray;
+    border: none;
+    border-radius: 25px;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.toggle-circle {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 2.5px;
+    left: 5px;
+    transition: left 0.3s;
+}
+
+
+body.dark-mode .toggle-circle {
+    left: 25px; 
+}
+
+
+body.dark-mode .toggle-button {
+    background-color: gray; 
+}
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        font-size: 18px;
+    }
+
+    header ul {
+        padding: 0;
+    }
+
+    .rectangle {
+        width: 90%;
+        height: auto;
+        padding: 20px;
+        margin-bottom: 60px; 
+        
+    }
+
+    .heading {
+        font-size: 28px;
+      
+    }
+    .heading{display: none;}
+    .footer {
+        padding: 20px 10px;
+        text-align: center;
+    }
+
+    .footer-item {
+        justify-content: center;
+    }
+
+    .footer-icon {
+        width: 15px;
+        height: 15px;
+    }
+    
+    .image-top-left {
+      
+        display: none;
+      }
+      
+     
+      .image-top-right {
+         display: none;
+      }
+}
+
